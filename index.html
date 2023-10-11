@@ -1,25 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- En adelante, trataremos siempre de incluir un charset UTF-8 y los metadatos básicos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RollingCodeSchool" />
+    <meta name="description" content="Ejemplo de código HTML5 semántico básico" />
+    <meta name="keywords" content="rollingcodeschool html5" />
     <title>RollingCodeSchool Comisión 90i</title>
   </head>
 
   <body>
-    <!--
-        Ejemplo de estructura básica de página HTML5
+    <!-- Comenzamos a utilizar etiquetas semánticas -->
+    <header> <!-- Cabecera (imagen de presentación, logo de la empresa, nombre, etc)-->
+      <img src="https://rollingcodeschool.com/wp-content/uploads/2021/07/Grupo-8.png" alt="Logo Rolling" />
+      <h1>RollingCodeSchool Academy</h1>
+      <h2>Comisión 90i</h2>
 
-        - DOCTYPE html al inicio
+      <!-- Barra principal de navegación (menu, enlaces sociales, etc)-->
+      <nav>Principal | Contacto | etc</nav>
 
-        - todo el contenido encerrado en la etiqueta html
+      <hr />
+    </header>
 
-        - head (cabecera de documento) con información relevante para el navegador y el sistema
-          (metadatos, título, archivos adicionales a incluir, etc)
+    <main> <!-- Contenido semántico principal -->
+      <aside> <!-- Barra lateral (publicidad, menu secundario, formulario de login o registro, etc)-->
+        Formulario de Login
+        <br />
+        <br />
+        Publicidad
+        <br />
+        <br />
+        <a href="https://rollingcodeschool.com">Búsquedas</a>
+      </aside>
 
-        - body (cuerpo del documento) con el contenido en sí de la página, que será interpretado y mostrado
-          por el navegador de manera amigable
-    -->
-    <h1>RollingCodeSchool Comisión 90i</h1>
+      <section> <!-- Identifica una sección dentro del main -->
+        <article> <!-- Identifica un área dentro de la sección (por ej una noticia en una portada)-->
+          <h1>Primer noticia</h1>
+          <p>
+            <strong>Anticipo</strong>. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Architecto, eligendi et mollitia accusantium non
+            esse quis atque ut quod iste est, aliquam hic assumenda ratione
+            molestias animi, voluptatibus molestiae facilis.
+          </p>
+        </article>
+
+        <article>
+          <h1>Segunda noticia</h1>
+          <p>
+            <b>Anticipo</b>. <i>Lorem ipsum dolor sit amet</i>, consectetur
+            adipisicing elit. Architecto, eligendi et mollitia accusantium non
+            esse quis atque ut quod iste est, aliquam hic assumenda ratione
+            molestias animi, voluptatibus molestiae facilis.
+          </p>
+        </article>
+
+        <article>
+          <h1>Tercer noticia</h1>
+          <p>
+            <mark>Anticipo</mark>. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Architecto, eligendi et mollitia accusantium non
+            esse quis atque ut quod iste est, aliquam hic assumenda ratione
+            molestias animi, voluptatibus molestiae facilis.
+          </p>
+        </article>
+
+        <article>
+          <h1>Tercer noticia</h1>
+          <p>
+            <del>Anticipo</del>. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Architecto, eligendi et mollitia accusantium non
+            esse quis atque ut quod iste est, aliquam hic assumenda ratione
+            molestias animi, voluptatibus molestiae facilis.
+          </p>
+        </article>
+
+        <article>
+          <h1>Tercer noticia</h1>
+          <p>
+            <ins>Anticipo</ins>. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Architecto, eligendi et mollitia accusantium non
+            esse quis atque ut quod iste est, aliquam hic assumenda ratione
+            molestias animi, voluptatibus molestiae facilis.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- El pie cierra la página, no es obligatorio pero sí bastante habitual (datos de contacto, redes sociales, ubicación, etc)-->
+    <footer>Pie de página, cierre. Datos de contacto / redes, etc.</footer>
   </body>
 </html>
