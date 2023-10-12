@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RollingCodeSchool" />
+    <meta name="description" content="Ejemplo de manejo básico de imágenes" />
+    <meta name="keywords" content="rollingcodeschool html5" />
+    <title>Imágenes</title>
+  </head>
+
+  <body>
+    <!--
+        Etiqueta img:
+        - MUY IMPORTANTE agregar el atributo alt con una descripción del contenido de la imagen
+        - Formatos de imagen habituales:
+          - jpg (mejor compresión pero no transparencia),
+          - gif (animaciones simples),
+          - png (algo menos de compresión pero con posibilidad de transparencia),
+          - webp (mejor compresión, transparencia, no tanto soporte en navegadores aún)
+        
+        https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
+
+        - MUCHO CUIDADO siempre con el tema de las rutas, ver en este caso que la imagen
+          se encuentra en la carpeta img, por lo tanto debemos utilizar la ruta correcta
+          para que el sistema ubique el archivo.
+    -->
+    <img src="img/portada_fullstack.png" alt="Cabecera principal Rolling">
+    
+    <!--
+        Atención!, siempre que se utilice png con transparencia, verificar colores.
+        En este caso todo funciona correctamente, pero el png es transparente con letras en blanco,
+        si el fondo de la página también es blanco, lógicamente la imagen estará allí pero no se verá.
+    -->
+    <img src="img/logo_rolling_blanco.png" alt="Logo Rolling">
+
+    <!--
+      Veremos luego más atributos para mejorar el uso de la etiqueta img,
+      y repasaremos también la etiqueta semántica figure para el manejo de imágenes
+    -->
+  </body>
+</html>

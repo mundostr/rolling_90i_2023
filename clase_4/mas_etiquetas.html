@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RollingCodeSchool" />
+    <meta name="description" content="Ejemplo de más etiquetas HTML5" />
+    <meta name="keywords" content="rollingcodeschool html5" />
+    <title>Más etiquetas habituales de HTML</title>
+  </head>
+
+  <body>
+    <!--
+      a (link / enlace):
+      - Una etiqueta esencial que nos permite generar un enlace hacia otro contenido
+      - Este enlace puede dirigirse tanto a un contenido local, como a otro remoto
+      - Atributo target: nos permite especificar si el contenido se abrirá en la misma ventana u otra
+    -->
+    <a href="https://google.com" target="_blank">Ir al buscador de Google</a>
+
+    <!--
+      div (capa / división):
+        - div nos permite delimitar áreas / regiones en la página.
+        - cada una podrá tener sus propias opciones de posición, estética, espaciado y demás.
+        - En este ejemplo no vemos diferencia en principio entre los textos colocados en divs
+          y los colocados manualmente, pero si habilitamos un borde por ejemplo, podemos ver
+          que las capas están allí.
+          Las distintas etiquetas semánticas que ya hemos mencionado operan como capas, solo
+          bajo nombres especiales para mejorar justamente el significado de cada parte de contenido
+          para buscadores y otros sistemas.
+    -->
+    <div style="border: 1px solid #333">Area 1</div>
+    <div>Area 2</div>
+    <div>Area 3</div>
+
+    <br>
+    <span style="border: 1px solid #333">Area 1</span><br>
+    Area 2<br> <!-- <br> (break) salto de línea -->
+    Area 3<br>
+    <hr> <!-- línea horizontal -->
+
+    <!--
+      Ordered list (lista ordenada): contiene elementos li.
+      El sistema antecede cada elemento con un número de orden que va incrementando
+    -->
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ol>
+
+    <!--
+      Unordered list (lista desordenada): contiene elementos li.
+      El sistema antecede cada elemento con un marcador (bullet)
+    -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </body>
+</html>
