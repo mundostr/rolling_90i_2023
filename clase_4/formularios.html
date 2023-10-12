@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RollingCodeSchool" />
+    <meta name="description" content="Ejemplo de uso mínimo de formularios" />
+    <meta name="keywords" content="rollingcodeschool html5" />
+    <title>Primer ejemplo de formularios</title>
+  </head>
+
+  <body>
+    <!--
+      Todas las etiquetas (tags) repasadas hasta el momento han sido para generar distintas
+      SALIDAS en el navegador. No obstante en algún momento necesitaremos también ENTRADAS
+      de datos por parte del usuario, en ese caso manejaremos formularios con campos que
+      nos permitirán recibir estos datos.
+
+      En este primer ejemplo vemos un formulario muy sencillo con 4 campos:
+      - nombre: (tipo texto)
+      - email: (tipo email)
+      - clave: (tipo password = caracteres ocultos)
+      - suscripcion: (tipo select), lista seleccionable de opciones
+
+      Por el momento solo vemos el esquema básico, aún nos falta una parte muy importante
+      que es la del control y procesamiento de los datos que toma el formulario, la cual
+      veremos más adelante.
+    -->
+
+    <form action="">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" />
+      
+      <br>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" id="email" />
+      
+      <br>
+
+      <label for="clave">Clave:</label>
+      <input type="password" name="clave" id="clave" />
+      
+      <br>
+
+      <label for="suscripcion">Tipo de suscripción:</label>
+      <select name="suscripcion" id="suscripcion">
+        <option value="basica">Básica</option>
+        <option value="comun">Común</option>
+        <option value="premium">Premium</option>
+      </select>
+
+      <br>
+
+      <!-- Este es un simple botón que le permite al usuario ejecutar una acción, por ej enviar el formulario -->
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>

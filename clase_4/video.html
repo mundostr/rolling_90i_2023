@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RollingCodeSchool" />
+    <meta name="description" content="Ejemplo de reproducción de video" />
+    <meta name="keywords" content="rollingcodeschool html5" />
+    <title>Reproducción de video</title>
+  </head>
+
+  <body>
+    <!--
+      Etiqueta video:
+        - Ver más en: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+        
+        - Nos permite reproducir videos en varios formatos, los más habituales:
+          - mp4
+          - webm
+        
+        - Puede reproducir tanto videos grabados como señales de streaming en vivo,
+          siempre y cuando el streaming contenga el formato correcto.
+
+        - Atributo control: activa la visualización de un reproductor predeterminado
+          del navegador. Si no lo colocamos, podemos ocultarlo y utilizar nuestra propia
+          estética de reproducción, manejando el elemento de audio con Javascript.
+        
+        - Atributo autoplay: habilita la reproducción automática del contenido tan pronto
+          como el sistema tenga posibilidad de hacerlo, pero ATENCION!, existen restricciones
+          de privacidad en navegadores y otros sistemas, que eventualmente pueden bloquear
+          esta reproducción automática, aún con autoplay.
+    -->
+
+    <!-- Opción compacta: -->
+    <video controls src="video/ejemplo1.webm" type="video/webm"></video>
+
+    <br>
+    
+    <!-- Opción extendida -->
+    <video width="640" height="360" controls>
+        <source src="video/ejemplo1.webm" type="video/webm">
+        <source src="video/ejemplo1.mp4" type="video/mp4">
+        Su navegador no soporta el elemento HTML5 de video
+    </video>
+  </body>
+</html>

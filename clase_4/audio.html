@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RollingCodeSchool" />
+    <meta name="description" content="Ejemplo de reproducción de audio" />
+    <meta name="keywords" content="rollingcodeschool html5" />
+    <title>Reproducción de audio</title>
+  </head>
+
+  <body>
+    <!--
+      Etiqueta audio:
+        - Ver más en: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+        
+        - Nos permite reproducir audios en varios formatos, los más habituales:
+          - mp3
+          - ogg
+          - wav
+        
+        - Puede reproducir tanto audios grabados como señales de streaming en vivo,
+          siempre y cuando el streaming contenga el formato correcto.
+
+        - Atributo control: activa la visualización de un reproductor predeterminado
+          del navegador. Si no lo colocamos, podemos ocultarlo y utilizar nuestra propia
+          estética de reproducción, manejando el elemento de audio con Javascript.
+        
+        - Atributo autoplay: habilita la reproducción automática del contenido tan pronto
+          como el sistema tenga posibilidad de hacerlo, pero ATENCION!, existen restricciones
+          de privacidad en navegadores y otros sistemas, que eventualmente pueden bloquear
+          esta reproducción automática, aún con autoplay.
+    -->
+    
+    <!--
+      Opción compacta:
+        - especificamos un solo atributo src con el audio a reproducir
+        - en este caso es un streaming en vivo
+    -->
+    <audio controls autoplay src="https://24373.live.streamtheworld.com/LA_RED_AM910AAC_SC"></audio>
+
+    <br>
+
+    <!--
+      Opción extendida:
+        - especificamos varios elementos internos source con distintas fuentes de audio.
+        - el navegador intentará reproducir el primero, si no ubica el archivo o no reconoce
+          el formato, probará con el segundo, y así.
+        - Aquí podemos ver que si bien ejemplo1.wav y ejemplo1.ogg no existen, el sistema
+          continuará y podrá reproducir ejemplo1.mp3
+    -->
+    <audio controls>
+      <source src="audio/ejemplo1.wav" type="audio/wav">
+      <source src="audio/ejemplo1.ogg" type="audio/ogg">
+      <source src="audio/ejemplo1.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+</html>

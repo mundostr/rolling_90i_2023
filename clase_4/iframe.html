@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RollingCodeSchool" />
+    <meta name="description" content="Ejemplo de uso de iframes" />
+    <meta name="keywords" content="rollingcodeschool html5" />
+    <title>Iframes</title>
+  </head>
+
+  <body>
+    <!--
+      La etiqueta iframe es muy útil, ya que nos permite insertar contenidos externos dentro de
+      un área específica de la página.
+
+      Puede utilizarse para inserción de videos, mapas, resultados deportivos y más, de acuerdo
+      a lo que ofrezca el contenido de origen.
+
+      En este ejemplo utilizamos el servicio de Youtube para insertar en un iframe su reproductor
+      con un video específico. De nuevo, al igual que las etiquetas audio y video, podremos manejar
+      tanto contenidos grabados como streaming en vivo.
+    -->
+
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/tajj2_qARmU"
+      title="Часть 2 Чемпионат России F2 ABCD  17-21 августа 2023 года . Москва. 2-3 тур F2C"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <!--
+      Este es otro ejemplo, en el cual vemos el mismo formato de iframe, pero insertando un contenido de Google Maps
+      Muchos servicios externos nos brindarán ya el código de iframe armado, o al menos la url que debemos utilizar
+      como src para conectar.
+    -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14240.411333629021!2d-65.2175015449297!3d-26.83668138034573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1697068915592!5m2!1sen!2sar"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>
