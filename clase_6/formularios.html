@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios con estilos</title>
+    
+    <!--
+      El tag link nos permite insertar relaciones externas, en este caso hacer
+      referencia a una hoja de estilos en el directorio css de nuestro proyecto
+      Al ejecutarse este HTML, el sistema recuperará los estilos desde el archivo.
+    -->
+    <link rel="stylesheet" href="./css/formularios.css">
+
+    <style>
+      /*
+      Podemos también escribir directamente código CSS dentro de una etiqueta style
+      en el head, para evitar importar elementos externos.
+
+      Si el HTML es muy pequeño y solo se necesitan unos pocos estilos, es una opción
+      válida; para proyectos más completos, siempre es más ordenado manejar los estilos
+      por separado.
+      */
+    </style>
+  </head>
+
+  <body>
+    <h1>Formularios, tipos de campos más habituales y estilos</h1>
+
+    <p>
+      Los formularios, a diferencia de las demás etiquetas a las que estamos
+      habituados en HTML, nos permiten INGRESAR datos, es decir, dar la
+      posibilidad al usuario de CARGAR <span>prueba</span> información.
+    </p>
+
+    <p>
+      Si bien podemos utilizar campos de formulario de manera directa,
+      trataremos siempre de encerrarlos con la etiqueta <q>form</q>.
+    </p>
+
+    <p>
+      Dos atributos muy comunes para una <q>form</q> son <i>action</i> y
+      <i>enctype</i>. El primero indica la ruta a la cual se enviará el
+      contenido del formulario para procesamiento; el segundo la codificación
+      que se utilizará para formatear esos datos.
+    </p>
+
+    <p>
+      Aunque visualmente varios campos se perciban igual, según su tipo (type)
+      serán evaluados de manera diferente al intentar enviar los datos.
+    </p>
+
+    <p>
+      Va un listado de los tipos más utilizados. Detalle completo en
+      <a
+        href="https://www.w3schools.com/html/html_form_input_types.asp"
+        target="_blank"
+        >https://www.w3schools.com/html/html_form_input_types.asp</a
+      >
+    </p>
+
+    <form action="">
+      <!--
+        Aplicamos color a este h2 específico con un estilo inline, esta es
+        otra forma de utilizar CSS, embebiendo directamente el estilo en
+        la etiqueta que se necesita.
+
+        Por lo general nos manejaremos con hojas de estilo externas,
+        reservaremos un estilo inline solamente para casos puntuales en los
+        que necesitemos hacer un pequeño ajuste a un elemento específico
+        de la página
+      -->
+      <h2 style="color: darkred;">Opciones de formulario</h2>
+      
+      <label for="numero">number:</label>
+      <input
+        type="number"
+        name="numero"
+        id="numero"
+        min="1"
+        max="100"
+        required
+      />
+
+      <br /><br />
+
+      <label for="telefono" style="color: #333; font-weight: bold;">tel (1234-123456):</label>
+      <input
+        type="tel"
+        name="telefono"
+        id="telefono"
+        pattern="[0-9]{4}-[0-9]{6}"
+        size="12"
+      />
+
+      <br /><br />
+
+      <label for="nombre">text:</label>
+      <input type="text" name="nombre" id="nombre" />
+
+      <br /><br />
+
+      <label for="email">email:</label>
+      <input type="email" name="email" id="email" />
+
+      <br /><br />
+
+      <label for="clave">password:</label>
+      <input type="password" name="clave" id="clave" />
+
+      <br /><br />
+
+      <label for="fecha">date:</label>
+      <input type="date" name="fecha" id="fecha" />
+
+      <br /><br />
+
+      <label for="hora">time:</label>
+      <input type="time" name="hora" id="hora" />
+
+      <br /><br />
+
+      <label for="rango">range (0-100):</label>
+      <input type="range" name="rango" id="rango" min="0" max="100" step="10" />
+
+      <br /><br />
+
+      <label for="archivo">file:</label>
+      <input type="file" name="archivo" id="archivo" />
+
+      <br /><br />
+
+      <span>radio:</span><br />
+      <input type="radio" name="lenguaje" id="html" value="HTML" />
+      <label for="html">HTML</label>
+      <input type="radio" name="lenguaje" id="css" value="CSS" />
+      <label for="css">CSS</label>
+      <input type="radio" name="lenguaje" id="javascript" value="JAVASCRIPT" />
+      <label for="javascript">JAVASCRIPT</label>
+
+      <br /><br />
+
+      <span>checkbox:</span><br />
+      <input type="checkbox" name="lenguaje1" id="html" value="HTML" />
+      <label for="html">HTML</label>
+      <input type="checkbox" name="lenguaje2" id="css" value="CSS" />
+      <label for="css">CSS</label>
+      <input type="checkbox" name="lenguaje3" id="javascript" value="JAVASCRIPT" />
+      <label for="javascript">JAVASCRIPT</label>
+
+      <br /><br />
+
+      <label for="suscripcion">select:</label>
+      <select name="suscripcion" id="suscripcion">
+        <option value="basica">Suscripción Básica</option>
+        <option value="comun">Suscripción Común</option>
+        <option value="premium">Suscripción Premium</option>
+      </select>
+
+      <br /><br />
+
+      <textarea name="comentario" id="comentario" cols="30" rows="5">Área de texto</textarea>
+
+      <br /><br />
+
+      <label for="navegador">datalist:</label>
+      <input list="navegadores" name="navegador" id="navegador">
+      
+      <datalist id="navegadores">
+        <option value="Firefox" />
+        <option value="Chrome" />
+        <option value="Chrome" />
+        <option value="Opera" />
+        <option value="Safari" />
+        <option value="Edge" />
+      </datalist>
+
+      <br /><br />
+
+      <!--
+        El primer botón permite al usuario ejecutar una acción
+        El type submit le indica al navegador que al presionar el botón,
+        se debe enviar el contenido del formulario a la dirección action del form
+
+        Vemos el uso del atributo class para asignar una clase. En los estilos
+        hemos configurado ya algunas reglas CSS generales para la etiqueta button,
+        por lo tanto los 3 botones tomarán esas reglas; luego aprovechamos un
+        par de clases personalizadas (btn-ok y btn-err) para cambiar detalles
+        puntuales.
+
+        Esta forma es también más ordenada que utilizar estilos inline.
+      -->
+      <button class="btn-ok" type="submit">Enviar</button>
+      <button>Cancelar</button>
+      <button class="btn-err">Botón 3</button>
+
+      <br /><br />
+
+      <!--
+        Alternativamente se puede utilizar una imagen para el botón submit
+      -->
+      <!-- <input type="image" src="./confirm.png" alt="Enviar formulario" title="Enviar formulario" width="48" height="48"> -->
+    </form>
+  </body>
+</html>
