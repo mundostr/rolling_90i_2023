@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling News</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <img class="header-logo" src="https://campus.rollingcodeschool.com/pluginfile.php/1/core_admin/logo/0x150/1633815474/logo2.png" alt="Logo Rolling" />
+
+        <div class="weather">SM Tucumán 24.5</div>
+    </header>
+
+    <nav>
+        <a href="index.html">Portada</a>
+        |
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <h1>FORMULARIO CONTACTO</h1>
+        
+        <section>
+            <article>
+                <form action="contacto.html">
+                    <div>
+                        <!--
+                            En lugar de un label, podemos colocar una referencia a lo que debe
+                            colocarse en el campo, mediante el atributo placeholder
+                        -->
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                        <br />
+                    
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <br />
+
+                        <textarea name="mensaje" id="mensaje" rows="6" placeholder="Contenido del mensaje"></textarea>
+                    </div>
+
+                    <!--
+                        Solo una muestra para recordar el uso de estilos inline cuando se necesitan ajustes puntuales,
+                        luego al depurar el código, estos estilos pueden moverse a una clase.
+                    -->
+                    <div style="margin-top: 2%; border-top: 1px solid #333333; padding-top: 2%;">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        RollingCode &copy2023
+    </footer>
+</body>
+</html>

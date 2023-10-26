@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    color: #333333;
+    background-color: #e1e1e1;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    /*
+    Este position: relative se agrega para poder ubicar de forma absoluta la capa (div)
+    que marca la temperatura actual en SM Tucumán
+    */
+    position: relative;
+    height: 20vh;
+    padding: 1%;
+    /*
+    Utilizamos nomenclatura standard para definir el color, también podemos
+    aplicar hexadecimal o rgba. Mismo color:
+    rgba: background-color: rgba(240, 128, 128, 1);
+    hexa: background-color: #f08080;
+    */
+    background-color: lightcoral;
+}
+
+nav {
+    padding: 2vh;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+main {
+    padding: 4%;
+}
+
+article {
+    padding: 2%;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    margin-bottom: 2%;
+}
+
+footer {
+    padding: 1%;
+    background-color: lightcoral;
+    text-align: right;
+}
+
+/*
+Introducimos el concepto de Pseudoclases (https://www.w3schools.com/css/css_pseudo_classes.asp).
+Se trata de modificadores que nos permiten agregar o quitar estilos de manera dinámica
+según se produzcan distintos eventos:
+1- link: estilos por defecto.
+2- visited: estilos que usará si el item ya ha sido visitado.
+3- hover: estilos que mostrará cuando el mouse pase sobre él.
+4- active: estilos que usará si el item ya ha sido clickeado.
+*/
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffff00;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+button {
+    border: 0;
+    color: #ffffff;
+    background-color: #555555;
+    border-radius: 4px;
+    padding: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    cursor: pointer; /* permite cambiar el cursor a una mano indicadora */
+}
+
+/* Vemos que podemos aplicar pseudoclases no solo a hipervínculos */
+button:hover {
+    background-color: #333333;
+}
+
+/*
+Cuando deseemos aplicar un mismo paquete de estilos a más de un elemento,
+solo tenemos que separar los elementos por coma.
+*/
+input, textarea {
+    color: #333333;
+    background-color: #f1f1f1;
+    padding: 12px;
+    min-width: 300px;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 1%;
+}
+
+.header-logo {
+    height: 100%;
+}
+
+/* Este estilo posiciona de forma absoluta, es para el cuadro de datos de clima del header */
+.weather {
+    position: absolute;
+    font-size: 110%;
+    bottom: 5%;
+    right: 1%;
+    padding: 1%;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #cc0000;
+    border-radius: 8px;
+}
+
+.article-title:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.article-title:visited {
+    color: #000000;
+}
+
+.article-title:hover {
+    color: #990000 !important;
+}
+
+.article-title:active {
+    color: #000000;
+}
+
+.article-image {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.article-image:hover {
+    opacity: 1;
+}
