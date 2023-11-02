@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-around;
+}
+
+section article {
+    width: 200px;
+    height: 200px;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+section :nth-child(1) {
+    background-color: red;
+}
+
+section :nth-child(2) {
+    background-color: green;
+}
+
+section :nth-child(3) {
+    background-color: blue;
+}
