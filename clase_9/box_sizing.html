@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+
+    <style>
+        /*
+        Es MUY IMPORTANTE tener en claro la configuración general de box-sizing
+        que se está utilizando, porque de ella depende la forma en la cual el navegador
+        renderiza los elementos:
+
+        content-box: se consideran los distintos elementos de la caja, es decir, en este
+                     ejemplo el ancho real sería de 176px
+        
+        border-box: el sistema trata de utilizar los valores reales especificados,
+                    el botón en este caso tendría un ancho real de 160px.
+        */
+
+        button {
+            margin: 0;
+            border: 0;
+            padding: 8px;
+            width: 160px;
+            height: 32px;
+            box-sizing: content-box; /* border-box */
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    <button>Ingresar</button>
+</body>
+</html>
