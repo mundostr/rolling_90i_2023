@@ -1,0 +1,219 @@
+/*
+Estilos de etiquetas HTML
+*/
+body {
+    margin: 0;
+    font-family: verdana, arial, helvetica;
+    background-color: hsl(0, 0%, 80%);
+    font-size: 100%;
+}
+
+header {
+    position: relative;
+    padding: 1%;
+    height: 20vh; /* 20% de la altura total del viewport disponible */
+    /* vh (viewport height = altura; vw viewport width = ancho)*/
+    background-color: lightcoral;
+    /* background-color: rgba(240, 128, 128, 1); */
+    /* background-color: #f08080; */
+}
+
+nav {
+    padding: 2vh;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+main {
+    padding: 2%;
+}
+
+footer {
+    padding: 1%;
+    background-color: lightcoral;
+    text-align: right;
+}
+
+/*
+Pseudo-clases
+https://www.w3schools.com/css/tryit.asp?filename=trycss_link
+*/
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffff00;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+article {
+    padding: 2%;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    margin-bottom: 1%;
+}
+
+/* article button {
+    position: relative;
+    z-index: 2;
+} */
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+button {
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #555555;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+input, textarea {
+    color: #333333;
+    background-color: #f1f1f1;
+    padding: 12px;
+    min-width: 300px;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 1%;
+}
+
+/*
+Estilos de clases personalizadas
+*/
+.article-title:link {
+    color: #000000;
+}
+
+.article-title:visited {
+    color: #000000;
+}
+
+.article-title:hover {
+    color: #990000 !important;
+}
+
+.article-title:link {
+    color: #000000;
+}
+
+.article-image {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.article-image:hover {
+    opacity: 1;
+}
+
+.weather {
+    position: absolute;
+    font-size: 110%;
+    bottom: 5%;
+    right: 1%;
+    padding: 1%;
+    font-weight: bold;
+    color: #333333;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    /* font-family: "Sofia"; */
+}
+
+/*
+Estilos de ids (identificadores únicos)
+Practicamos el uso de ids para asignar estilos a elementos específicos
+En este caso tanto el section con id generales como el de id adicionales, pasarán
+a ser contenedores flex
+*/
+#generales, #adicionales {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1%;
+}
+
+/* Los article dentro de generales, ocuparán aprox la mitad del ancho disponible */
+#generales article {
+    width: 45.25%;
+}
+
+/* Los article dentro de adicionales, ocuparán aprox un tercio del ancho disponible */
+#adicionales article {
+    width: 28.4%;
+}
+
+/* Ejemplo de position: fixed para un botón que quede superpuesto sobre el contenido, al pie */
+#btn-contacto {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    background-color: #cc0000;
+    font-size: 110%;
+    width: 160px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+/*
+Media queries: un mecanismo a través del cual CSS permite reasignar dinámicamente estilos
+en base a ciertas condiciones, en este ejemplo, los estilos indicados solo se aplicarán
+HASTA un determinado ancho (560, 640, 800px).
+
+Este es uno de los conceptos básicos del diseño responsive, para entender como pueden
+comenzar a fluir los distintos elementos según el viewport disponible.
+*/
+@media screen and (max-width: 800px) {
+    #adicionales {
+        /* Wrap permite que los elementos pueden colapsar hacia abajo a una nueva línea */
+        flex-wrap: wrap;
+    }
+
+    #adicionales article {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #generales, #adicionales {
+        flex-wrap: wrap;
+    }
+
+    #generales article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #generales, #adicionales {
+        flex-wrap: wrap;
+    }
+
+    #generales article {
+        width: 100%;
+    }
+
+    #adicionales article {
+        width: 100%;
+    }
+}

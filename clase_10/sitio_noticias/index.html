@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling News - Portada</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+    <!-- Incorporamos el archivo base css de Bootstrap, desde una CDN, es decir, un enlace externo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <img src="https://campus.rollingcodeschool.com/pluginfile.php/1/core_admin/logo/0x150/1633815474/logo2.png" alt="Rolling" style="height: 100%; width: auto;">
+
+        <div class="weather">SM Tucumán 19.6°</div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Portada</a>
+        |
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <h1>PORTADA INFORMATIVA</h1>
+        
+        <section id="destacadas">
+            <!-- Fácilmente podemos tomar código HTML de componentes Bootstrap y utilizarlo en nuestro sistema -->
+            <article class="card">
+                <img src="https://rollingcodeschool.com/wp-content/uploads/2023/02/RC-1.png" class="card-img-top" alt="Foto de la noticia" style="width: 75%; clip-path: circle(100% at 0 100%);">
+                <div class="card-body">
+                  <h5 class="card-title">Noticia destacada</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores enim facilis ratione blanditiis nihil cumque praesentium, harum accusantium id veritatis voluptas porro aut adipisci rem! Sapiente totam fugit illo.</p>
+                  <a href="#" class="btn btn-danger">Ver más</a>
+                </div>
+            </article>
+        </section>
+
+        <!--
+            Utilizamos la sección de noticias generales como ejemplo.
+            Podemos ver que ahora, en lugar de utilizar nuestros estilos,
+            simplemente aplicamos clases predefinidas en Bootstrap, que
+            nos permiten generar un contenedor flex y organizar los elementos dentro.
+
+            MUY IMPORTANTE, repasar los conceptos de breakpoints para entender la
+            nomenclatura de clases:
+            https://getbootstrap.com/docs/5.3/layout/breakpoints/
+        -->
+        <section class="container-fluid row">
+            <article class="col-sm-6 col-md-8" class="card">
+                <img src="https://rollingcodeschool.com/wp-content/uploads/2023/02/RC-1.png" class="card-img-top" alt="Foto de la noticia" style="width: 75%; clip-path: circle(100% at 0 100%);">
+                <div class="card-body">
+                    <h5 class="card-title">Noticia General 1</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores enim facilis ratione blanditiis nihil cumque praesentium, harum accusantium id veritatis voluptas porro aut adipisci rem! Sapiente totam fugit illo.</p>
+                    <a href="#" class="btn btn-danger">Ver más</a>
+                </div>
+            </article>
+
+            <article class="col-sm-6 col-md-4" class="card">
+                    <img src="https://rollingcodeschool.com/wp-content/uploads/2023/02/RC-1.png" class="card-img-top" alt="Foto de la noticia" style="width: 75%; clip-path: circle(100% at 0 100%);">
+                    <div class="card-body">
+                      <h5 class="card-title">Noticia General 2</h5>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores enim facilis ratione blanditiis nihil cumque praesentium, harum accusantium id veritatis voluptas porro aut adipisci rem! Sapiente totam fugit illo.</p>
+                      <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+            </article>
+    
+            <article class="col-sm-6 col-md-4">
+                    <div>
+                        <h1><a class="article-title" href="noticia1.html">Noticia general 3</a></h1>
+                    </div>
+        
+                    <div>
+                        <h2>Anticipo de la noticia</h2>
+                    </div>
+        
+                    <div>
+                        <img class="article-image" src="https://rollingcodeschool.com/wp-content/uploads/2023/02/RC-1.png" alt="Imagen noticia" style="width: 35%; clip-path: circle(100% at 0 100%);">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores enim facilis ratione blanditiis nihil cumque praesentium, harum accusantium id veritatis voluptas porro aut adipisci rem! Sapiente totam fugit illo.</p>
+                    </div>
+        
+                    <div style="text-align: right;">
+                        <button>Ver más</button>
+                    </div>
+            </article>
+        </section>
+
+        <section id="adicionales">
+            <article>
+                <div>
+                    <h1><a class="article-title" href="noticia1.html">Noticia general 3</a></h1>
+                </div>
+
+                <div>
+                    <h2>Anticipo de la noticia</h2>
+                </div>
+
+                <div>
+                    <img class="article-image" src="./img/NewTux.svg" alt="Imagen noticia" style="width: 35%; clip-path: circle(100% at 0 100%);">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores enim facilis ratione blanditiis nihil cumque praesentium, harum accusantium id veritatis voluptas porro aut adipisci rem! Sapiente totam fugit illo.</p>
+                </div>
+
+                <div style="text-align: right;">
+                    <button>Ver más</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1><a class="article-title" href="noticia1.html">Noticia general 4</a></h1>
+                </div>
+
+                <div>
+                    <h2>Anticipo de la noticia</h2>
+                </div>
+
+                <div>
+                    <img class="article-image" src="./img/NewTux.svg" alt="Imagen noticia" style="width: 35%; clip-path: circle(100% at 0 100%);">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores enim facilis ratione blanditiis nihil cumque praesentium, harum accusantium id veritatis voluptas porro aut adipisci rem! Sapiente totam fugit illo.</p>
+                </div>
+
+                <div style="text-align: right;">
+                    <button>Ver más</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h1><a class="article-title" href="noticia1.html">Noticia general 5</a></h1>
+                </div>
+
+                <div>
+                    <h2>Anticipo de la noticia</h2>
+                </div>
+
+                <div>
+                    <img class="article-image" src="./img/NewTux.svg" alt="Imagen noticia" style="width: 35%; clip-path: circle(100% at 0 100%);">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores enim facilis ratione blanditiis nihil cumque praesentium, harum accusantium id veritatis voluptas porro aut adipisci rem! Sapiente totam fugit illo.</p>
+                </div>
+
+                <div style="text-align: right;">
+                    <button>Ver más</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        RollingCode &copy2023
+    </footer>
+
+    <button id="btn-contacto">Llamanos</button>
+
+    <!-- También nos traemos el archivo base js de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
