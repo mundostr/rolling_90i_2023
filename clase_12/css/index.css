@@ -1,0 +1,12 @@
+header, footer {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem; /* root element */
+    text-align: right;
+}
