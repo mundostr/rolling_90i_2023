@@ -2,7 +2,7 @@
 # [ROLLINGCODE SCHOOL](https://rollingcodeschool.com/)
 
 ![Programación Fullstack](programacion_fullstack.png)
-## COMISION 90i 2023 - Repositorio de ejercicios
+## COMISION 90i 2023 - Repositorio general de ejercicios
 
 ### Campus Rolling: [https://campus.rollingcodeschool.com/](https://campus.rollingcodeschool.com/)
 ### Universe Rolling: [https://universe.rollingcodeschool.com/](https://universe.rollingcodeschool.com/)
