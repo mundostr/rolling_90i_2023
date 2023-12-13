@@ -30,21 +30,27 @@ console.log(nro1_p + nro2_p) */
  * - escriba en la pantalla cual es el mayor
  */
 
-const nro1 = parseInt(prompt('Ingresar n1:'))
-const nro2 = parseInt(prompt('Ingresar n2:'))
+/* const nro1 = parseInt(prompt('Ingresar n1:'))
+const nro2 = parseInt(prompt('Ingresar n2:')) */
 
-/* if (nro1 > nro2) {
+// Alternativa para convertir String a número
+const nro1 = +prompt('Ingresar n1:')
+const nro2 = +prompt('Ingresar n2:')
+
+if (nro1 > nro2) {
     console.log('El número mayor es el 1')
 } else if (nro1 < nro2) {
     console.log('El número mayor es el 2')
 } else {
     console.log('Los números son iguales')
-} */
-
-if (nro1 === nro2) {
-    console.log('Los números son iguales')
-} else if (nro1 < nro2) {
-    console.log('El número mayor es el 2')
-} else {
-    console.log('El número mayor es el 1')
 }
+
+// Podemos ordenar las condiciones encadenadas de distinta manera
+// dependiendo de qué nos interese evaluar primero
+/* if (nro1 === nro2) {
+    console.log('Los números son iguales')
+} else if (nro1 < nro2) {
+    console.log('El número mayor es el 2')
+} else {
+    console.log('El número mayor es el 1')
+} */
