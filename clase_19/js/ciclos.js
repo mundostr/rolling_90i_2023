@@ -43,7 +43,7 @@ for (let c1 = 1; c1 <= LIMITE; c1++) {
 // Cuando coloquemos 1, 2 o 3, el ciclo se interrumpirá y el sistema continuará
 // con la siguiente instrucción por fuera (console.log(ingreso))
 console.log('Utilizando un ciclo INFINITO o INDEFINIDO')
-let ingreso = ''
+let ingreso = 0
 do {
     ingreso = parseInt(prompt('Ingresar opción (1 | 2 | 3'))
 } while (ingreso != 1 && ingreso != 2 && ingreso != 3)
