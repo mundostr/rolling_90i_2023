@@ -46,5 +46,5 @@ console.log('Utilizando un ciclo INFINITO o INDEFINIDO')
 let ingreso = 0
 do {
     ingreso = parseInt(prompt('Ingresar opción (1 | 2 | 3'))
-} while (ingreso != 1 && ingreso != 2 && ingreso != 3)
+} while (ingreso !== 1 && ingreso !== 2 && ingreso !== 3)
 console.log(ingreso)
