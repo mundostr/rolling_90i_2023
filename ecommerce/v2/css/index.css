@@ -1,0 +1,13 @@
+body {
+    color: #fff;
+    background-color: #333;
+    padding: 1em;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+.campo {
+    width: 50px;
+}
