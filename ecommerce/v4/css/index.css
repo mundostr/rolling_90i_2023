@@ -1,0 +1,53 @@
+body {
+    color: #fff;
+    background-color: #333;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+header {
+    /* background-image: url('https://via.placeholder.com/1920x1080'); */
+    background-image: url('https://east-fruit.com/wp-content/uploads/2021/01/turk1-960x585.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    background-color: #f60;
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
+.campo {
+    width: 50px;
+}
+
+.card-personalizada {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.card-personalizada img {
+    width: 50%;
+}
+
+.cpo-cantidad {
+    float: right;
+    width: 75px;
+    margin-right: 0.5em;
+}
+
+.btn-agregar {
+    float: right;
+    font-size: 160%;
+}
