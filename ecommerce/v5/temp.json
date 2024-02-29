@@ -1,0 +1,4 @@
+[
+    { "codigo": 1, "tipo": "F", "nombre": "Manzana kg", "precio": 1500, "stock": 100, "imagen": "apple.png" },
+    { "codigo": 2, "tipo": "F", "nombre": "Pera kg", "precio": 1100, "stock": 100, "imagen": "pear.png" }
+]
