@@ -1,0 +1,14 @@
+h3 {
+    color: #fc0;
+}
+
+.card-personalizada {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.card-personalizada img {
+    width: 50%;
+    margin: 0 auto;
+}
