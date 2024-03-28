@@ -1,0 +1,22 @@
+import React from 'react';
+import { Button, Card } from 'react-bootstrap';
+
+import './Producto.css';
+
+function Producto({ producto, gestionar }) {
+    return (
+        <>
+            <Card className="card-personalizada">
+                <Card.Img variant="top" src={`/img/productos/${producto.imagen}`} />
+                
+                <Card.Body>
+                    <Card.Title>{producto.nombre} ($ {producto.precio.toFixed(2)})</Card.Title>
+                    <Card.Text>{producto.stock} kg en stock</Card.Text>
+                    <Button variant="success" onClick={() => gestionar('agregar', producto.codigo, 1)}>Agregar</Button>
+                </Card.Body>
+            </Card>
+        </>
+    )
+}
+
+export default Producto;

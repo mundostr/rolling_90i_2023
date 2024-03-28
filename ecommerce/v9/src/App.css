@@ -1,0 +1,25 @@
+header {
+    background-image: url('/img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 260px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    background-color: #f60;
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
+.spinner {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    z-index: 10000;
+}
